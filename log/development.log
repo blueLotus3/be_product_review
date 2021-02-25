@@ -224,3 +224,150 @@ Processing by ReviewsController#create as */*
 Completed 201 Created in 107ms (Views: 0.6ms | ActiveRecord: 43.8ms | Allocations: 8855)
 
 
+Started PUT "/products/1/reviews" for ::1 at 2021-02-24 17:32:26 -0800
+  
+ActionController::RoutingError (No route matches [PUT] "/products/1/reviews"):
+  
+Started GET "/products/1/reviews" for ::1 at 2021-02-24 17:32:41 -0800
+Processing by ReviewsController#index as */*
+  Parameters: {"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! BEST", "author"=>"Hey Say! 7", "product_id"=>"1", "review"=>{"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! BEST", "author"=>"Hey Say! 7"}}
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 6.8ms | ActiveRecord: 12.7ms | Allocations: 4219)
+
+
+Started PUT "/products/4/reviews" for ::1 at 2021-02-24 17:32:56 -0800
+  
+ActionController::RoutingError (No route matches [PUT] "/products/4/reviews"):
+  
+Started PUT "/products/4/reviews" for ::1 at 2021-02-24 17:34:28 -0800
+  
+ActionController::RoutingError (No route matches [PUT] "/products/4/reviews"):
+  
+Started PUT "/products/1/reviews" for ::1 at 2021-02-24 17:35:21 -0800
+  
+ActionController::RoutingError (No route matches [PUT] "/products/1/reviews"):
+  
+Started GET "/products/1/reviews" for ::1 at 2021-02-24 17:37:51 -0800
+Processing by ReviewsController#index as */*
+  Parameters: {"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! WORST", "author"=>"Hey Say! 7", "product_id"=>"1", "review"=>{"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! WORST", "author"=>"Hey Say! 7"}}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 10.8ms | Allocations: 4258)
+
+
+Started DELETE "/products/4/reviews" for ::1 at 2021-02-24 17:38:07 -0800
+  
+ActionController::RoutingError (No route matches [DELETE] "/products/4/reviews"):
+  
+Started DELETE "/products/1/reviews" for ::1 at 2021-02-24 17:38:24 -0800
+  
+ActionController::RoutingError (No route matches [DELETE] "/products/1/reviews"):
+  
+Started GET "/products/1/reviews" for ::1 at 2021-02-24 17:40:03 -0800
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#index as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 57ms (Views: 13.7ms | ActiveRecord: 7.5ms | Allocations: 8932)
+
+
+Started PUT "/products/1/reviews" for ::1 at 2021-02-24 17:40:12 -0800
+  
+ActionController::RoutingError (No route matches [PUT] "/products/1/reviews"):
+  
+Started GET "/reviews/1" for ::1 at 2021-02-24 17:40:49 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/reviews/1"):
+  
+Started GET "/products/1/reviews" for ::1 at 2021-02-24 17:40:53 -0800
+Processing by ReviewsController#index as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.5ms | Allocations: 1338)
+
+
+Started PUT "/products/4/reviews" for ::1 at 2021-02-24 17:41:02 -0800
+  
+ActionController::RoutingError (No route matches [PUT] "/products/4/reviews"):
+  
+Started PATCH "/products/4/reviews" for ::1 at 2021-02-24 17:45:59 -0800
+  
+ActionController::RoutingError (No route matches [PATCH] "/products/4/reviews"):
+  
+Started PUT "/products/4/reviews" for ::1 at 2021-02-24 17:47:46 -0800
+  
+ActionController::RoutingError (No route matches [PUT] "/products/4/reviews"):
+  
+Started PUT "/products/1/reviews" for ::1 at 2021-02-24 17:47:52 -0800
+  
+ActionController::RoutingError (No route matches [PUT] "/products/1/reviews"):
+  
+Started GET "/reviews" for ::1 at 2021-02-24 17:51:54 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/reviews"):
+  
+Started GET "/products/1/reviews" for ::1 at 2021-02-24 17:51:57 -0800
+Processing by ReviewsController#index as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mReview Load (2.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 8.0ms | ActiveRecord: 11.2ms | Allocations: 5438)
+
+
+Started PUT "/products/4/reviews" for ::1 at 2021-02-24 17:52:51 -0800
+  
+ActionController::RoutingError (No route matches [PUT] "/products/4/reviews"):
+  
+Started GET "/products/2/reviews" for ::1 at 2021-02-24 17:53:10 -0800
+Processing by ReviewsController#index as */*
+  Parameters: {"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! WORST", "author"=>"Hey Say! 7", "product_id"=>"2", "review"=>{"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! WORST", "author"=>"Hey Say! 7"}}
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 2]]
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.5ms | Allocations: 668)
+
+
+Started GET "/products/1/reviews" for ::1 at 2021-02-24 17:53:17 -0800
+Processing by ReviewsController#index as */*
+  Parameters: {"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! WORST", "author"=>"Hey Say! 7", "product_id"=>"1", "review"=>{"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! WORST", "author"=>"Hey Say! 7"}}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.3ms | Allocations: 1143)
+
+
+Started GET "/reviews/1" for ::1 at 2021-02-24 17:54:06 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/reviews/1"):
+  
+Started PUT "/reviews/4" for ::1 at 2021-02-24 17:54:14 -0800
+Processing by ReviewsController#update as */*
+  Parameters: {"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! WORST", "author"=>"Hey Say! 7", "id"=>"4", "review"=>{"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! WORST", "author"=>"Hey Say! 7"}}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:45:in `set_review'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:30:in `update'
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:30:in `update'
+  [1m[36mReview Update (51.9ms)[0m  [1m[33mUPDATE "reviews" SET "content" = $1, "updated_at" = $2 WHERE "reviews"."id" = $3[0m  [["content", "Hey Say! WORST"], ["updated_at", "2021-02-25 01:54:14.873921"], ["id", 4]]
+  ↳ app/controllers/reviews_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:30:in `update'
+Completed 200 OK in 143ms (Views: 0.5ms | ActiveRecord: 63.1ms | Allocations: 10189)
+
+
+Started DELETE "/reviews/4" for ::1 at 2021-02-24 17:54:21 -0800
+Processing by ReviewsController#destroy as */*
+  Parameters: {"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! WORST", "author"=>"Hey Say! 7", "id"=>"4", "review"=>{"title"=>"Hey! Say! JUMP", "content"=>"Hey Say! WORST", "author"=>"Hey Say! 7"}}
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:45:in `set_review'
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:39:in `destroy'
+  [1m[36mReview Destroy (1.4ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/reviews_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:39:in `destroy'
+Completed 204 No Content in 25ms (ActiveRecord: 16.1ms | Allocations: 1779)
+
+
